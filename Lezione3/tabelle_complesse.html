@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan & Rowspan</title>
+    <style>
+        caption {
+            padding: 10px;
+            caption-side: bottom;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            font-size: 0.8rem;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 7px 5px;
+        }
+
+        th {
+            background-color: rgb(235, 235, 235);
+        }
+
+        td {
+            text-align: center;
+        }
+
+        tr:nth-child(even) td {
+            background-color: rgb(250, 250, 250);
+        }
+
+        tr:nth-child(odd) td {
+            background-color: rgb(240, 240, 240);
+        }
+
+        .heman {
+            font: 1.4rem molot;
+            text-shadow: 1px 1px 1px #fff, 2px 2px 1px #000;
+        }
+
+        .skeletor {
+            font: 1.7rem rapscallion;
+            letter-spacing: 3px;
+            text-shadow: 1px 1px 0 #fff, 0 0 9px #000;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Nome e cognome</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>57</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Jill</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>555-8745</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <th colspan="2">MY APP</th>
+        </tr>
+        <tr>
+            <th rowspan="2"><img src="assets/giallo.jpg"></th>
+            <td>
+                <h5>Scegli</h5>
+                <p>Fai la tua scelta</p>
+                <ol>
+                    <li>Uno</li>
+                    <li>Due</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>MAIL</td>
+        </tr>
+    </table>
+
+    <hr>
+    <table>
+        <caption>Questa è la caption</caption>
+        <tr>
+            <td> </td>
+            <th scope="col" class="heman">He-Man</th>
+            <th scope="col" class="skeletor">Skeletor</th>
+        </tr>
+        <tr>
+            <th scope="row">Role</th>
+            <td>Hero</td>
+            <td>Villain</td>
+        </tr>
+        <tr>
+            <th scope="row">Weapon</th>
+            <td>Power Sword</td>
+            <td>Havoc Staff</td>
+        </tr>
+        <tr>
+            <th scope="row">Dark secret</th>
+            <td>Expert florist</td>
+            <td>Cries at romcoms</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
