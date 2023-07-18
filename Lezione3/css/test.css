@@ -23,6 +23,7 @@ span.importante {
     text-decoration: underline;
 
 }
+
 span.importante2 {
     font: 300px;
     font-style: normal;
@@ -31,3 +32,23 @@ span.importante2 {
     text-shadow: 5ch;
 }
 
+.carbonara {
+    border: 10px ridge #f00;
+    background-color: #ff0;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+
+.carbonara img {
+    width: 500px;
+}
+
+.carbonara p {
+    font: 200;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
+}
