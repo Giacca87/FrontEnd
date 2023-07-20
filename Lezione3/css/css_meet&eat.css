@@ -7,3 +7,24 @@ span.piattaforma_social {
     text-decoration: underline;
     color: #36A0F4;
 }
+
+.form_css {
+    padding: 5px;
+    display: table;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.form_css {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
