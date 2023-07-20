@@ -10,9 +10,8 @@ span.piattaforma_social {
 
 .form_css {
     padding: 5px;
-    display: table;
     font-family: Arial, Helvetica, sans-serif;
-
+    font-weight: bold;
 }
 
 div.form_css {
@@ -21,10 +20,8 @@ div.form_css {
 
 label,
 input {
-    display: table-cell;
-    margin-bottom: 10px;
-}
-
-label {
-    padding-right: 10px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    margin: 0.4rem 0;
 }

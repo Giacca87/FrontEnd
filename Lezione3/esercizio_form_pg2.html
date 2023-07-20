@@ -9,17 +9,58 @@
 </head>
 
 <body>
-    <form action="" method="get" class="form_css">
-        <div class="form_css">
-            <label for="name">Inserisci il tuo nome </label>
-            <input type="text" name="name" id="name" pattern="[A-Za-z]*" required>
-        </div>
+    <fieldset style="width: 260px;">
+        <form action="" method="get" class="form_css">
+            <ul>
+                <li>
+                    <div class="form_css">
+                        <label for="name">Nome </label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                </li>
+                <li>
+                    <div class="form_css">
+                        <label for="cognome">Cognome</label>
+                        <input type="text" name="cognome" id="cognome">
+                    </div>
+                </li>
+                <li>
+                    <div class="form_css">
+                        <label for="nascita">Data di nascita</label>
+                        <input type="date" name="nascita" id="data_di_nascita" value="" max="2005-01-01">
+                    </div>
+                </li>
+                <li>
+                    <div class="form_css">
+                        <label for="città_di_nascita">Città di nascita</label>
+                        <input type="text" name="città_di_nascita" id="città_di_nascita">
+                    </div>
+                </li>
+                <li>
+                    <div class="form_css">
+                        <label for="codice_fiscale">Codice fiscale</label>
+                        <input type="text" name="codice_fiscale" id="codice_fiscale"
+                            pattern="^[A-Z a-z]{6}\d{2}[A-Z a-z]\d{2}[A-Z a-z]\d{3}[A-Z a-z]$" required>
+                    </div>
+                </li>
+                <li>
+                    <div class="form_css">
+                        <label for="numero_telefonico">Numero di telefono</label>
+                        <input type="tel" name="numero_telefonico" id="numero_telefonico"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <small>Format: 123-456-7890</small>
+                    </div>
+                </li>
+            </ul>
+            <div style="display: flex; justify-content: center;"><input type="submit" value="Iscriviti"></div>
 
-        <div class="form_css">
-            <label for="name">Inserisci il tuo cognome</label>
-            <input type="text" name="name" id="name" pattern="[A-Za-z]*" required>
-        </div>
-    </form>
+        </form>
+        <div style="display: flex; justify-content: center; height: 50px; margin: 0;"> <a href="esercizio_form.html">
+                <button>Torna alla home</button>
+                <!-- serve per cambiare pagina-->
+            </a></div>
+    </fieldset>
+
 </body>
 
 </html>
