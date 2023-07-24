@@ -5,31 +5,18 @@ body {
 
 }
 
-.card_1 {
+.card_1,
+.card_2,
+.card_3 {
     color: whitesmoke;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 30%;
-    margin: left;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-}
-
-.card_2 {
-    color: whitesmoke;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 30%;
-    margin: center;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: ;
-
+    margin: 20px;
 }
 
 .card:hover {
@@ -38,5 +25,14 @@ body {
 
 .container {
     padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    /* sposta h4 e p in basso */
 
+}
+
+.card_container {
+    display: flex;
+    justify-content: space-around;
+    /* distanzia le card l'una dall'altra */
 }
