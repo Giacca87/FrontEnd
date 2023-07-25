@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form di iscrizione</title>
-    <link href="css/css_meet&eat.css" rel="stylesheet">
+    <link href="css/css_meet&eat copy.css" rel="stylesheet">
 </head>
 
 <body>
-    <fieldset style="width: 260px;">
+    <div class="card">
+
         <form action="" method="get" class="form_css">
             <ul>
                 <li>
@@ -47,8 +48,8 @@
                     <div class="form_css">
                         <label for="numero_telefonico">Numero di telefono</label>
                         <input type="tel" name="numero_telefonico" id="numero_telefonico"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                        <small>Format: 123-456-7890</small>
+                            pattern="[0-9]{3}-[0-9]{7}" required>
+                        <small>Format: 123-4567890</small>
                     </div>
                 </li>
             </ul>
@@ -58,8 +59,11 @@
         <div style="display: flex; justify-content: center; height: 50px; margin: 0;"> <a href="esercizio_form.html">
                 <button>Torna alla home</button>
                 <!-- serve per cambiare pagina-->
-            </a></div>
-    </fieldset>
+            </a>
+        </div>
+
+    </div>
+
 
 </body>
 

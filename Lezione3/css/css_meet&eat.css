@@ -1,6 +1,13 @@
+body {
+    background-color:rgb(140, 185, 64) ;
+}
+
 span.titolo {
+    display: block;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #36A0F4;
+
 }
 
 span.piattaforma_social {

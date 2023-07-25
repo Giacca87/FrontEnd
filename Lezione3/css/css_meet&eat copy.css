@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #36d236;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    /* or whatever width you'd like */
+    max-width: 800px;
+    /* prevents the card from getting too wide on large screens */
+    margin: 20px;
+}
+
+.form_css {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+input {
+    margin: 0.4rem 0;
+}
+
+input[type="submit"] {
+    align-self: center;
+    /* centers the submit button */
+}
