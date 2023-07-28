@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element_html5</title>
+    <style>
+        .forecast {
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .forecast>h1,
+        .day-forecast {
+            margin: 0.5rem;
+            padding: 0.3rem;
+            font-size: 1.2rem;
+        }
+
+        .day-forecast {
+            background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+        }
+
+        .day-forecast>h2,
+        .day-forecast>p {
+            margin: 0.2rem;
+            font-size: 1rem;
+        }
+
+        aside {
+            width: 40%;
+            padding-left: 0.5rem;
+            margin-left: 0.5rem;
+            float: right;
+            box-shadow: inset 5px 0 5px -5px #29627e;
+            font-style: italic;
+            color: #29627e;
+        }
+
+        aside>p {
+            margin: 0.5rem;
+        }
+
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: 0.5em 0.5em 0;
+        }
+
+        summary {
+            font-weight: bold;
+            margin: -0.5em -0.5em 0;
+            padding: 0.5em;
+        }
+
+        details[open] {
+            padding: 0.5em;
+        }
+
+        figure {
+            border: thin #c0c0c0 solid;
+            display: flex;
+            flex-flow: column;
+            padding: 5px;
+            max-width: 220px;
+            margin: 0;
+        }
+
+        img {
+            max-width: 220px;
+            max-height: 150px;
+        }
+
+        figcaption {
+            background-color: #222;
+            color: #fff;
+            font: italic smaller sans-serif;
+            padding: 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Article</h2>
+
+    <article class="forecast">
+        <h1>Weather forecast for Seattle</h1>
+        <article class="day-forecast">
+            <h2>03 March 2018</h2>
+            <p>Rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>04 March 2018</h2>
+            <p>Periods of rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>05 March 2018</h2>
+            <p>Heavy rain.</p>
+        </article>
+    </article><br>
+    <hr>
+    <h2>Aside</h2>
+
+    <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both
+        larval and adult forms.</p>
+    <aside>
+        <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+    <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both
+        larval and adult forms.</p><br>
+    <hr>
+
+    <h2>Details</h2>
+
+    <details>
+        <summary>Details</summary>
+        Something small enough to escape casual notice.
+    </details><br>
+    <hr>
+    <h2>Figure</h2>
+    <figure>
+        <img src="assets/elephants.jpg" alt="An elephant at sunset" title="An elephant at sunset">
+        <figcaption>An elephant at sunset</figcaption>
+    </figure>
+
+
+
+
+</body>
+
+</html>
