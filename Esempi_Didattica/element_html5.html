@@ -63,9 +63,14 @@
             border: thin #c0c0c0 solid;
             display: flex;
             flex-flow: column;
-            padding: 5px;
+            padding: 10px;
             max-width: 220px;
             margin: 0;
+        }
+
+        .figure_container {
+            display: flex;
+            gap: 10px;
         }
 
         img {
@@ -79,6 +84,26 @@
             font: italic smaller sans-serif;
             padding: 3px;
             text-align: center;
+        }
+
+        .logo {
+            background: left / cover url(assets/cucciolo.jpg);
+            width: 500px;
+            display: flex;
+            height: 250px;
+            align-items: center;
+            justify-content: center;
+            font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', fantasy;
+            color: #ff0083;
+            text-shadow: #000 2px 2px 0.2rem;
+        }
+
+        header>h1 {
+            margin-bottom: 0;
+        }
+
+        header>time {
+            font: italic 0.7rem sans-serif;
         }
     </style>
 </head>
@@ -120,11 +145,97 @@
         Something small enough to escape casual notice.
     </details><br>
     <hr>
+
     <h2>Figure</h2>
-    <figure>
-        <img src="assets/elephants.jpg" alt="An elephant at sunset" title="An elephant at sunset">
-        <figcaption>An elephant at sunset</figcaption>
-    </figure>
+    <div class="figure_container">
+        <figure>
+            <img src="assets/elephants.jpg" alt="An elephant at sunset" title="An elephant at sunset">
+            <figcaption>An elephant at sunset</figcaption>
+        </figure>
+        <br>
+        <figure>
+            <figcaption><b>Edsger Dijkstra:</b></figcaption>
+            <blockquote>
+                If debugging is the process of removing software bugs, then programming must
+                be the process of putting them in.
+            </blockquote>
+        </figure>
+        <br>
+
+        <figure>
+            <p>
+                Bid me discourse, I will enchant thine ear, Or like a fairy trip upon the
+                green, Or, like a nymph, with long dishevelled hair, Dance on the sands, and
+                yet no footing seen: Love is a spirit all compact of fire, Not gross to
+                sink, but light, and will aspire.
+            </p>
+            <figcaption><cite>Venus and Adonis</cite>, by William Shakespeare</figcaption>
+        </figure>
+    </div><br>
+    <hr>
+    <h2>Header</h2>
+
+    <header>
+        <a class="logo" href="#">Cute Puppies Express!</a>
+    </header>
+
+    <article>
+        <header>
+            <h1>Beagles</h1>
+            <time>08.12.2014</time>
+        </header>
+        <p>I love beagles <em>so</em> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly
+            soft!</p>
+    </article>
+    <br>
+    <article>
+        <header>
+            <h2>The Planet Earth</h2>
+            <p>
+                Posted on Wednesday, <time datetime="2017-10-04">4 October 2017</time> by
+                Jane Smith
+            </p>
+        </header>
+        <p>
+            We live on a planet that's blue and green, with so many things still unseen.
+        </p>
+        <p><a href="https://example.com/the-planet-earth/">Continue reading…</a></p>
+    </article>
+    <br>
+    <header>
+        <h1>Main Page Title</h1>
+        <img src="assets/logo.webp  " alt="MDN logo" />
+    </header><br>
+    <hr>
+    <h2>Main</h2>
+
+    <main>
+        <p>The <b>main</b> HTML element represents the dominant content of the <b>body</b> of a document. The main
+            content area consists of content that is directly related to or expands upon the central topic of a
+            document, or the central functionality of an application.
+        </p>
+    </main><br>
+    <hr>
+    <h2>Mark</h2>
+
+    <p>
+        It is a dark time for the Rebellion. Although the Death Star has been
+        destroyed, <mark class="match">Imperial</mark> troops have driven the Rebel
+        forces from their hidden base and pursued them across the galaxy.
+    </p>
+
+    <p>
+        Evading the dreaded <mark class="match">Imperial</mark> Starfleet, a group of
+        freedom fighters led by Luke Skywalker has established a new secret base on
+        the remote ice world of Hoth.
+    </p>
+    <br>
+    <hr>
+
+    <h2>Nav</h2>
+
+
+
 
 
 
