@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet&Eat</title>
+    <link href="css/css_meet&eat.css" rel="stylesheet">
+</head>
+<!-- <h2>Esercizio</h2>
+    <p>Creare un form di iscrizione a un sito internet con il maggiorn numero di campi compilabili possibili. Con tutti
+        i controlli</p> -->
+
+<body>
+    <h1> <span class="titolo">Meet<span style="color: rgb(255, 197, 5);">&</span><span
+                style="color: rgb(11, 227, 47);">Eat</span></span></h1>
+    <h2 style="font-family: Arial, Helvetica, sans-serif; text-align: center;">Iscriviti alla nuova <span
+            class="piattaforma_social">piattaforma social</span> dove potrai incontrare persone durante i pasti per
+        scambiare due
+        chiacchere e fare conoscenza.</h2>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="assets/Pranzo_in_comapgnia.jpg"
+            style="border: 5px solid rgb(14, 219, 11); height: 300px; border-radius: 25px;">
+    </div>
+
+    <h3 style="text-align: center;">Compila il form per iniziare a mangiare in compagnia</h3>
+
+    <div style="display: flex; justify-content: center;">
+        <a href="esercizio_form_pg2.html">
+            <button>Vai al form</button> <!-- serve per cambiare pagina-->
+        </a>
+    </div>
+    <hr style="border: none;height: 5px;background-color: #333;margin: 20px 0; ">
+
+    <hr>
+
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+    
+    <label for="myBrowser">Choose a browser from this list:</label>
+    <input list="browsers" id="myBrowser" name="myBrowser" />
+    <datalist id="browsers">
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+        <option value="Microsoft Edge"></option>
+    </datalist>
+
+
+
+
+
+</body>
+
+</html>

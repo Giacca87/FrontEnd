@@ -1,0 +1,38 @@
+body {
+    background-color: rgba(249, 154, 87, 0.826);
+    font-family: 'Cormorant', serif;
+    font-size: x-large;
+
+}
+
+.card_1,
+.card_2,
+.card_3 {
+    color: whitesmoke;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    /* sposta h4 e p in basso */
+
+}
+
+.card_container {
+    display: flex;
+    justify-content: space-around;
+    /* distanzia le card l'una dall'altra */
+}
