@@ -68,9 +68,23 @@ se invertissi name con name"Sottotesto" vincerebbe name*/
     color: yellow;
     font-weight: bolder;
 }
+
 /* Questo funziona per i link */
 
 a[title] {
     color: brown;
     text-decoration: none;
+}
+
+div.grassetto,
+p.grassetto {
+    font-weight: 900;
+    /* scrivendo div.grassetto andiamo a richiamare solo il div, se noi
+    attaccassimo la classe a un paragrafo senza specificare p. non funzionerebbe */
+}
+
+a.mylink[href*="amazon.it"] {
+    font-weight: 400;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
