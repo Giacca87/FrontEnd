@@ -6,9 +6,29 @@
     padding: 5px;
 }
 
+body {
+    background-color: blue;
+}
+
+main {
+    background-color: white;
+}
+
+article {
+
+    margin-top: 10%;
+    border-bottom: dotted black 1px;
+}
+
+
 p {
     margin: 10vw;
     font-size: 14px;
+}
+
+div {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: yellow;
 }
 
 .Titolo_h1 {
@@ -87,4 +107,43 @@ a.mylink[href*="amazon.it"] {
     font-weight: 400;
     color: red;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li {
+    list-style-type: disc;
+}
+
+li li {
+    list-style-type: circle;
+    color: blue;
+}
+
+div>span>span {
+    background-color: yellow;
+    /*in questa maniera si va a selezionare gli elementi figli diretti (uno salto solo).
+    si possono mettere più sali, l'importante è che siano sequenziali */
+}
+
+span {
+    background-color: aqua;
+}
+
+p~span {
+    color: red;
+    /*COMBINAZIONE TASTI alt 126 | in questo modo si selezionano elementi che si seguo
+     ma che non hanno relazioni dirette e possono esserci altri elementi di mezzo */
+}
+
+/* Paragraphs that come immediately after any image */
+img+p {
+    font-weight: bold;
+    background-color: orangered;
+}
+
+img {
+    float: left;
+}
+
+li:first-of-type+li {
+    color: red;
 }
