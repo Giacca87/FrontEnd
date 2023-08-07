@@ -1,0 +1,15 @@
+@media (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 300px) {
+    body {
+        font-size: 2vw;
+    }
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
