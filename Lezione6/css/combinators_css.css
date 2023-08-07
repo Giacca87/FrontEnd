@@ -1,0 +1,20 @@
+body {
+    color: blue;
+}
+
+[name] {
+    background-color: yellow;
+    border: dotted 2px;
+}
+
+.heading {
+    text-transform: uppercase;
+}
+
+div>p {
+    border: dotted 2px black;
+}
+article>h3 {
+    background-color: red;
+    color: white;
+}
