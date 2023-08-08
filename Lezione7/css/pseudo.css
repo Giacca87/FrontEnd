@@ -62,15 +62,31 @@ h2 {
 }
 
 h1:has(+ h2) {
-    margin: 0 0 0.25rem 0; /*tradotto: se H1 ha un H2 di seguito applica questo stile */
-    color:blue;
+    margin: 0 0 0.25rem 0;
+    /*tradotto: se H1 ha un H2 di seguito applica questo stile */
+    color: blue;
 }
 
 p {
     font-weight: bold;
-  }
-  
-  li:first-child {
+}
+
+li:first-child {
     border: 2px solid orange;
-  }
-  
+}
+
+H1::first-line {
+    color: brown;
+}
+
+q::before {
+    /*inserisce qualcosa all'inizio di un elemento*/
+    content: "«";
+    /*alt 174 « alt 175 » */
+    color: blue;
+}
+
+q::after { /*Inserire qualcosa alla fine di un elemento*/
+    content: "»";
+    color: red;
+}
