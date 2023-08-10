@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background: red;
+    color: white;
+}
+
+#two {
+    position: relative;
+    top: 50px;
+    left: 20px;
+    background: blue;
+}
+
+#three {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    background: green;
+}
+
+div.box_positioning_absolute {
+    position: absolute;
+    top: 300px;
+}
+
+p {
+    background: aqua;
+    border: 3px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+span {
+    background: red;
+    border: 1px solid black;
+}
+
+.positioned {
+    position: absolute;
+    background: yellow;
+    top: 60px;
+    left: 30px;
+}
+h1 {
+    position: relative;
+    top: -10px;
+}
