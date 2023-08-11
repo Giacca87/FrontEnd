@@ -1,3 +1,4 @@
+/* 1 STEP : box sizing and lobotimized owl */
 :root {
     box-sizing: border-box;
 }
@@ -11,6 +12,8 @@
 body *+* {
     margin-top: 1.5em;
 }
+
+/* 2 STEP : generic styling rules */
 
 body {
     background: #bbb;
@@ -46,6 +49,9 @@ article {
     margin: 0 1.5em 1.5em 0;
     width: calc(50% - 1.5em);
 }
+article h4 {
+    margin: 0;
+}
 
 .container {
     max-width: 1080px;
@@ -60,7 +66,7 @@ section::after {
     clear: both;
 }
 
-.section {
+section {
     margin-right: -1.5em;
     margin-bottom: -1.5em;
 }
@@ -68,4 +74,17 @@ section::after {
 section::before {
     display: table;
     content: "";
+}
+
+.articles> :nth-child(2n+1) {
+    clear: left;
+}
+
+.articles img {
+    float: left;
+    margin: 0 1.5em 1.5em 0;
+}
+
+.articles .article-body {
+    overflow: auto;
 }
