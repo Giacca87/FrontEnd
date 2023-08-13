@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        #flex-container {
+            display: flex;
+            font-family: Consolas, Arial, sans-serif;
+        }
+
+        #flex-container>div {
+            padding: 1rem;
+        }
+
+        #flex-auto {
+            flex: auto;
+            border: 1px solid #f00;
+        }
+
+        #flex-initial {
+            border: 1px solid #000;
+        }
+
+        .box {
+            display: flex;
+            border: 1px solid;
+        }
+
+        div {
+            border: 1px solid green;
+        }
+
+        .box_reverse {
+            display: flex;
+            border: 1px solid;
+            flex-direction: row-reverse;
+        }
+
+        .box_wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+    <!--
+    <script>
+        const flexAuto = document.getElementById("flex-auto");
+        const flexInitial = document.getElementById("flex-initial");
+        flexAuto.addEventListener("click", () => {
+            flexInitial.style.display =
+                flexInitial.style.display === "none" ? "block" : "none";
+        });
+
+    </script>
+    -->
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            const flexAuto = document.getElementById("flex-auto");
+            const flexInitial = document.getElementById("flex-initial");
+            flexAuto.addEventListener("click", () => {
+                flexInitial.style.display =
+                    flexInitial.style.display === "none" ? "block" : "none";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="flex-container">
+        <div id="flex-auto">flex: auto (click to toggle raw box)</div>
+        <div id="flex-initial">flex: initial</div>
+    </div>
+
+    <hr>
+
+    <div class="box">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three
+            <br>has
+            <br>extra
+            <br>text
+        </div>
+    </div>
+    <hr>
+    <div class="box_reverse">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+    </div>
+    <hr>
+
+    <div class="box_wrap">
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, fugiat odio? Nobis, natus magni
+            deserunt ipsa reiciendis voluptatum possimus assumenda, dicta, ducimus eos vero? Error aspernatur laborum
+            velit qui alias?</div>
+        <div>Two</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ad est alias incidunt tempora, rerum soluta
+            fuga, eos, eius odit provident illo dignissimos qui harum deserunt doloremque at consequatur magnam.</div>
+    </div>
+
+
+
+</body>
+
+</html>
