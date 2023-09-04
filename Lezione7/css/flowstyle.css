@@ -1,0 +1,38 @@
+.box {
+    border: 1px solid red;
+    margin-bottom: 5px;
+}
+
+.box1 {
+    /*Rispetto alla posizione di partenza, viene spostato nelle direzione top right bottom left */
+    border: 1px solid blue;
+    /*position: relative;
+    top: 30px; left: 50px ;*/
+    margin-bottom: 5px;
+
+}
+
+.box2 {
+    /*Partendo dalle coordinate 0-0*/
+    border: 1px solid green;
+    /*position: absolute;
+    top: 450px;
+    left: 80px; */
+    margin-bottom: 5px;
+}
+
+.box3 {
+    border: 1px solid red;
+    margin-bottom: 5px;
+    /* position: fixed;
+    top: 500px;
+    right: 80px;*/
+    margin-bottom: 5px;
+}
+
+.box4 {
+    border: 10px solid red;
+    margin-bottom: 5px;
+    position: sticky;
+    top:0px;
+}

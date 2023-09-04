@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Example</title>
+    <style>
+        #zen {
+            color: red;
+            /* 0101 Colore del testo del paragrafo con id "zen" */
+        }
+
+        p {
+            color: blue;
+            /* 0001 Colore del testo per tutti i paragrafi */
+        }
+
+        #due p::first-line {
+            color: gray;
+            /* Cambia il colore della prima riga del paragrafo figlio dell'elemento con id "due" */
+        }
+
+        h1 {
+            color: rebeccapurple !important;
+            /*con !important bypassi tutti gli stili successivi */
+        }
+
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titolo</h1>
+    <p id="zen">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat saepe qui at. Nisi quo maxime ullam
+        repudiandae autem officiis? Laudantium rem architecto magni, blanditiis ducimus voluptate deleniti illo fugiat
+        libero.</p>
+    <br>
+    <div id="due">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat saepe qui at. Nisi quo maxime ullam
+            repudiandae autem officiis? Laudantium rem architecto magni, blanditiis ducimus voluptate deleniti illo
+            fugiat
+            libero.</p>
+    </div>
+</body>
+
+</html>

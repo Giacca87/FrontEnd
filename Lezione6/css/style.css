@@ -1,0 +1,154 @@
+* {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    margin: 5px;
+    padding: 5px;
+}
+
+body {
+    background-color: blue;
+}
+
+main {
+    background-color: white;
+}
+
+article {
+
+    margin-top: 10%;
+    border-bottom: dotted black 1px;
+}
+
+
+p {
+    margin: 10vw;
+    font-size: 14px;
+}
+
+div {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: yellow;
+}
+
+.Titolo_h1 {
+    font-size: 4vw;
+}
+
+#unico {
+    /*id è unico e non si può ripete*/
+    color: red
+}
+
+.unica {
+    color: blue;
+    margin: unset;
+    padding: unset;
+}
+
+.testo_del_sito {
+    margin: 15px;
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* tutti gli attributi che hanno name*/
+
+[name] {
+    color: burlywood;
+}
+
+/*importante l'ordine in cui inserisci gli elementi: 
+se invertissi name con name"Sottotesto" vincerebbe name*/
+
+/* Tutti gli attributi che hanno il valore (in questo caso) "Sottotesto" */
+
+[name="Sottotesto"] {
+    color: green;
+    font-weight: bolder;
+}
+
+/* Tutti gli attributi che finiscono (in questo caso) con "testo" */
+
+[name *="testo"] {
+    color: violet;
+    font-weight: bolder;
+}
+
+/* Tutti gli attrbuti che iniziano (in questo caso) con "Sott" */
+
+[name ^="Sott"] {
+    color: orangered;
+    font-weight: bolder;
+}
+
+/* Tutti gli attributi che hanno la substringa (in questo caso) "testo" */
+
+[name $="testo"] {
+    color: yellow;
+    font-weight: bolder;
+}
+
+/* Questo funziona per i link */
+
+a[title] {
+    color: brown;
+    text-decoration: none;
+}
+
+div.grassetto,
+p.grassetto {
+    font-weight: 900;
+    /* scrivendo div.grassetto andiamo a richiamare solo il div, se noi
+    attaccassimo la classe a un paragrafo senza specificare p. non funzionerebbe */
+}
+
+a.mylink[href*="amazon.it"] {
+    font-weight: 400;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li {
+    list-style-type: disc;
+}
+
+li li {
+    list-style-type: circle;
+    color: blue;
+}
+
+div>span>span {
+    background-color: yellow;
+    /*in questa maniera si va a selezionare gli elementi figli diretti (uno salto solo).
+    si possono mettere più sali, l'importante è che siano sequenziali */
+}
+
+span {
+    background-color: aqua;
+}
+
+p~span {
+    color: red;
+    /*COMBINAZIONE TASTI alt 126 | in questo modo si selezionano elementi che si seguono
+     ma che non hanno relazioni dirette e possono esserci altri elementi di mezzo */
+}
+
+/* Paragraphs that come immediately after any image */
+img+p {
+    font-weight: bold;
+    background-color: orangered;
+}
+
+img {
+    float: left;
+}
+
+li:first-of-type+li {
+    color: red;
+}
+
+div.test>div+button {
+    background-color: blue;
+    color: white;
+}

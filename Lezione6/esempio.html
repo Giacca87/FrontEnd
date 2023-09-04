@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempi selettori</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1 class="Titolo_h1">Titolo</h1>
+            <p class="testo_del_sito">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="unica"> Una
+                    classe
+                    che può essere ripetuta e nel css si trova con .</span>
+                quos repudiandae vero, odio
+                doloremque officia commodi quisquam laboriosam neque vitae sit veritatis repellendus. Aut nisi sint
+                repellat
+                nostrum.</p>
+
+            <div id="unico">
+                Prova di testo usato una sola volta come ID e nel css lo trovo con #
+            </div>
+            <p name="Sottotesto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima distinctio consectetur
+                esse
+                repudiandae, animi
+                eos numquam officia facilis dolorem dolorum vitae quis sit culpa iure quam debitis inventore,
+                repellendus
+                molestias!</p>
+        </article>
+        <article>
+            <p class="testo_del_sito">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum
+                omnis,
+                tempora officiis libero
+                similique quidem eligendi voluptatibus deleniti doloribus quisquam qui. Maxime dignissimos quas in sequi
+                voluptas facere non.</p>
+            <h3 name="Sottotitolo">Sottotitolo</h3>
+            <p class="testo_del_sito">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores illo
+                expedita
+                iste ea quod doloribus
+                aspernatur eius repudiandae quos distinctio, libero corrupti maxime sed! Aliquam consectetur natus
+                sapiente
+                exercitationem?</p>
+            <p name *="testo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore tenetur
+                similique in
+                cum vel deserunt ipsa molestiae autem placeat pariatur consectetur maiores, harum, fugiat earum
+                excepturi?
+                Ad,
+                fuga nihil.</p>
+        </article>
+        <article>
+            <a href="http://www.google.it" target="_blank" title="Vai a Google">Google</a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_blank"
+                title="vai a MWD">
+                Attribute selectors</a>
+
+            <div class="grassetto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla possimus eaque recusandae, esse
+                    temporibus
+                    animi amet dolor dolorem nihil suscipit natus autem quibusdam laborum asperiores hic facere dolorum
+                    sed
+                    tempora.</p>
+            </div>
+        </article>
+
+        <p class="grassetto">prova di testo</p>
+        <article>
+            <a href="http://www.amazon.it" target="_blank" title="Vai a Amazon" class="mylink">Amazon</a>
+            <a href="http://www.ibs.it" target="_blank" title="Vai a Ibs" class="mylink">Ibs</a>
+            <!--nel link IBS la classe non è stata presa in quanto manca il terzo elemento, ovvero c'è scritto IBS invece che Amazon-->
+
+        </article>
+
+        <article>
+            <ul>
+                <li>
+                    <div>Item 1</div>
+                    <ul>
+                        <li>Subitem A</li>
+                        <li>Subitem B</li>
+                    </ul>
+                </li>
+                <li>
+                    <div>Item 2</div>
+                    <ul>
+                        <li>Subitem A</li>
+                        <li>Subitem B</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </article>
+
+        <article>
+            <div>
+                <span>
+                    Span #1, in the div.
+                    <span>Span #2, in the span that's in the div.</span>
+                </span>
+            </div>
+            <span>Span #3, not in the div at all.</span>
+
+        </article>
+        <article>
+            <span>This is not red because it appears before any paragraph.</span>
+            <p>Here is a paragraph.</p>
+            <code>Here is some code.</code>
+            <span>
+                This span is red because it appears after the paragraph, even though there
+                are other nodes in between
+            </span>
+            <p>Whatever it may be, keep smiling.</p>
+            <h1>Dream big</h1>
+            <span>
+                Doesn't matter how many or what kind of nodes are in between, all spans from
+                the same parent after a paragraph are red.
+            </span>
+        </article>
+        <span>
+            This span is not red because it doesn't share a parent with a paragraph
+        </span>
+        <article>
+            <img src="assets/pollo.jpg" alt="pollo">
+            <p>ciao pollo!!!</p>
+        </article>
+        <article>
+            <ul>
+                <li>One</li>
+                <li>Two!</li>
+                <li>Three</li>
+            </ul>
+        </article>
+        <article>
+            <H1>Combinazione multipla</H1>
+            <div class="test">TEST
+                <div>Vuoto</div>
+                <button>Prova</button>
+            </div>
+
+
+        </article>
+
+    </main>
+</body>
+
+</html>

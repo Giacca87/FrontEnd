@@ -1,0 +1,92 @@
+button:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 45%;
+    /*le pseudoclassi applicano degli stili in base a fattori esterni, 
+    in questo caso è il passaggio del mouse con hoover */
+}
+
+label,
+input[type='submit'] {
+    display: block;
+    margin-top: 1em;
+}
+
+/*in questo caso è il check di un selettore */
+
+input:checked {
+    border: none;
+    outline: 2px solid deeppink;
+}
+
+a.link {
+    color: black;
+}
+
+a:visited {
+    color: forestgreen;
+    text-decoration-color: hotpink;
+}
+
+ol {
+    list-style-type: upper-alpha;
+    color: darkblue;
+}
+
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+:is(ol, ul, menu:unsupported) :is(ol, ul) {
+    color: green;
+}
+
+:is(ol, ul) :is(ol, ul) ol {
+    list-style-type: lower-greek;
+    color: chocolate;
+}
+
+p:not(.irrelevant) {
+    font-weight: bold;
+}
+
+p>strong,
+p>b.important {
+    color: crimson;
+}
+
+p> :not(strong, b.important) {
+    color: darkmagenta;
+}
+
+h1,
+h2 {
+    margin: 0 0 1rem 0;
+}
+
+h1:has(+ h2) {
+    margin: 0 0 0.25rem 0;
+    /*tradotto: se H1 ha un H2 di seguito applica questo stile */
+    color: blue;
+}
+
+p {
+    font-weight: bold;
+}
+
+li:first-child {
+    border: 2px solid orange;
+}
+
+H1::first-line {
+    color: brown;
+}
+
+q::before {
+    /*inserisce qualcosa all'inizio di un elemento*/
+    content: "«";
+    /*alt 174 « alt 175 » */
+    color: blue;
+}
+
+q::after { /*Inserire qualcosa alla fine di un elemento*/
+    content: "»";
+    color: red;
+}

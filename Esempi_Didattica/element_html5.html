@@ -105,10 +105,63 @@
         header>time {
             font: italic 0.7rem sans-serif;
         }
+
+        nav {
+            border-bottom: 1px solid black;
+        }
+
+        .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .crumb {
+            display: inline-block;
+        }
+
+        .crumb a::after {
+            display: inline-block;
+            color: #000;
+            content: '>';
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: 0.5em 0.5em 0;
+        }
+
+        summary {
+            font-weight: bold;
+            margin: -0.5em -0.5em 0;
+            padding: 0.5em;
+        }
+
+        details[open] {
+            padding: 0.5em;
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #aaa;
+            margin-bottom: 0.5em;
+        }
+
+        .figure_2 {
+            width: 700px;
+        }
+
+        .figure_2 audio {
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
+
+    <!--Spiegazione Article-->
     <h2>Article</h2>
 
     <article class="forecast">
@@ -127,6 +180,7 @@
         </article>
     </article><br>
     <hr>
+    <!--Spiegazione Aside-->
     <h2>Aside</h2>
 
     <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both
@@ -139,14 +193,14 @@
     <hr>
 
     <h2>Details</h2>
-
+    <!--Spiegazione Details-->
     <details>
         <summary>Details</summary>
         Something small enough to escape casual notice.
     </details><br>
     <hr>
-
-    <h2>Figure</h2>
+    <!--Spiegazione Figure-->
+    <h2>Fgure</h2>
     <div class="figure_container">
         <figure>
             <img src="assets/elephants.jpg" alt="An elephant at sunset" title="An elephant at sunset">
@@ -173,12 +227,12 @@
         </figure>
     </div><br>
     <hr>
+    <!--Spiegazione Header-->
     <h2>Header</h2>
 
     <header>
         <a class="logo" href="#">Cute Puppies Express!</a>
     </header>
-
     <article>
         <header>
             <h1>Beagles</h1>
@@ -207,6 +261,7 @@
         <img src="assets/logo.webp  " alt="MDN logo" />
     </header><br>
     <hr>
+    <!--Spiegazione Main-->
     <h2>Main</h2>
 
     <main>
@@ -216,6 +271,7 @@
         </p>
     </main><br>
     <hr>
+    <!--Spiegazione Mark-->
     <h2>Mark</h2>
 
     <p>
@@ -231,12 +287,102 @@
     </p>
     <br>
     <hr>
-
+    <!--Spiegazione Nav-->
     <h2>Nav</h2>
 
+    <nav class="crumbs">
+        <ol>
+            <li class="crumb"><a href="#">Bikes</a></li>
+            <li class="crumb"><a href="#">BMX</a></li>
+            <li class="crumb">Jump Bike 3000</li>
+        </ol>
+    </nav>
 
+    <h1>Jump Bike 3000</h1>
+    <p>This BMX bike is a solid step into the pro world. It looks as legit as it rides and is built to polish your
+        skills.</p>
 
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <!--Spiegazione Section-->
+    <h1>Section</h1>
 
+    <section>
+        <h2>Descrizione section</h2>
+        <p>The section HTML element represents a generic standalone section of a document, which doesn't have a more
+            specific
+            semantic element to represent it. Sections should always have a heading, with very few exceptions.</p>
+    </section>
+    <section>
+        <h3>Bisogna considerare anche:</h3>
+        <ul>
+            <li>If the contents of the element represent a standalone, atomic unit of content that makes sense
+                syndicated as a standalone piece (e.g. a blog post or blog comment, or a newspaper article), the
+                article element would be a better choice.</li>
+            <li>If the contents represent useful tangential information that works alongside the main content, but is
+                not directly part of it (like related links, or an author bio), use an aside.</li>
+            <li>If the contents represent the main content area of a document, use main.</li>
+            <li>If you are only using the element as a styling wrapper, use a <div> instead.</li>
+        </ul>
+    </section>
+
+    <hr>
+    <!--Spiegazione Summary: vedi details-->
+    <details>
+        <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+        A keyboard.
+    </details>
+    <hr>
+    <!--Spiegazione Audio-->
+    <h1>Audio</h1>
+
+    <figure class="figure_2">
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio controls src=""> <!--inserisci il file-->
+            <a href=""><!--inserisci il file-->
+                Download audio
+            </a>
+        </audio>
+    </figure>
+    <hr>
+    <!--Spiegazione video-->
+    <h1>Video</h1>
+    <video controls width="250">
+        <source src="/media/cc0-videos/flower.webm" type="video/webm">
+
+        <source src="/media/cc0-videos/flower.mp4" type="video/mp4"> <!--da inserire il video-->
+
+        Download the
+        <a href="/media/cc0-videos/flower.webm">WEBM</a>
+        or
+        <a href="/media/cc0-videos/flower.mp4">MP4</a>
+        video.
+    </video>
+    <hr>
+
+    <!--Spiegazione Canvas-->
+    <h1>Canvas</h1>
+    <canvas width="120" height="120">
+        An alternative text describing what your canvas displays.
+    </canvas>
+    <script>
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "green";
+        // Add a rectangle at (10, 10) with size 100x100 pixels
+        ctx.fillRect(10, 10, 100, 100);
+    </script>
+    <hr>
+    <!--Spiegazione Meta Tag & Viewport Tag Meta-->
+    <h1>Meta tag & viewport meta tag</h1>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank">Meta tag</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag" target="_blank">viewport tag Meta</a>
 
 
 

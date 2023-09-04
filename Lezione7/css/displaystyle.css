@@ -1,0 +1,37 @@
+.child {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #ccf;
+    border: 1px solid #ababab;
+    color: #000;
+}
+
+#example1 {
+    display: block;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#example2 {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#example3 {
+    display: none;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#example4 {
+    display: flex;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#example4 {
+    display: grid;
+    border: 1px solid black;
+    margin: 5px;
+}
