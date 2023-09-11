@@ -34,55 +34,100 @@ body {
 
 /* reset lobotoimized owl on li direct childern */
 
-.site-nav > li {
+.site-nav>li {
     margin-top: 0;
 }
 
 /* Set the a to be block and style it */
 
-.site-nav > li > a {
+.site-nav>li>a {
     display: block;
     padding: 0.5em 1em;
     background-color: rgb(209, 146, 45);
     color: white;
 }
 
- .site-nav > li + li {
+.site-nav>li+li {
     margin-left: 1.5em;
- }
+}
 
- .site-nav > .nav-right {
+.site-nav>.nav-right {
     margin-left: auto;
- }
+}
 
- /* STEP 3 Layout main area */
+/* STEP 3 Layout main area */
 
- main {
+main {
     display: flex;
- }
+}
 
- main > *+* {
+main>*+* {
     margin-top: 0;
     margin-left: 1.5em;
- }
+}
 
- .tile {
+.tile {
     padding: 1.5em;
     background-color: white;
- }
+}
 
- .tile :first-child {
+.tile :first-child {
     margin-top: 0;
- }
+}
 
- /* STEP 4 : assign flex layout to titles */
+/* STEP 4 : assign flex layout to titles */
 
- .column-main {
+.column-main {
     flex: 3;
- }
+}
 
- .column-sidebar {
+.column-sidebar {
     flex: 1;
- }
+    /* 5 STEP: assign flex layout to sidebar titles */
+    display: flex;
+    flex-direction: column;
+}
 
- 
+.column-sidebar>.tile {
+    flex: 1;
+}
+
+/* STEP 6: login tile */
+
+.login-form h3 {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.login-form label {
+    text-align: left;
+    font-weight: bold;
+}
+/*
+.login-form input:not([type=checkbox]):not([type=radio]) {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    border: 1px solid #dedede;
+    padding: .5em .5em;
+}
+*/
+
+.login-form input[type=checkbox],
+.login-form input[type=radio] {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    border: 1px solid #dedede;
+    padding: .5em .5em;
+}
+.login-form button {
+    margin-top: 1em;
+    border: 1px solid #cc6b5a;
+    background-color: white;
+    padding: .5em 1em;
+    cursor: pointer;
+}
