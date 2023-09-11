@@ -74,3 +74,15 @@ body {
  .tile :first-child {
     margin-top: 0;
  }
+
+ /* STEP 4 : assign flex layout to titles */
+
+ .column-main {
+    flex: 3;
+ }
+
+ .column-sidebar {
+    flex: 1;
+ }
+
+ 
