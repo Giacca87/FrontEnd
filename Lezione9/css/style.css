@@ -47,4 +47,30 @@ body {
     color: white;
 }
 
- 
+ .site-nav > li + li {
+    margin-left: 1.5em;
+ }
+
+ .site-nav > .nav-right {
+    margin-left: auto;
+ }
+
+ /* STEP 3 Layout main area */
+
+ main {
+    display: flex;
+ }
+
+ main > *+* {
+    margin-top: 0;
+    margin-left: 1.5em;
+ }
+
+ .tile {
+    padding: 1.5em;
+    background-color: white;
+ }
+
+ .tile :first-child {
+    margin-top: 0;
+ }
