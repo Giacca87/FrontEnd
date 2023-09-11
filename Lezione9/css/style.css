@@ -22,3 +22,29 @@ body {
     margin: 0 auto;
 }
 
+/*1 STEP: Apply Flex to site nav */
+
+.site-nav {
+    display: flex;
+    padding: 0.5em;
+    list-style-type: none;
+    background-color: cornflowerblue;
+    border-radius: 0.2em;
+}
+
+/* reset lobotoimized owl on li direct childern */
+
+.site-nav > li {
+    margin-top: 0;
+}
+
+/* Set the a to be block and style it */
+
+.site-nav > li > a {
+    display: block;
+    padding: 0.5em 1em;
+    background-color: rgb(209, 146, 45);
+    color: white;
+}
+
+ 
