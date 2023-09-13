@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    max-width: auto;
+    max-width: 1080PX;
     margin: 0 auto;
 }
 
@@ -79,11 +79,6 @@ main>*+* {
 .ristorante{
     display: flex;
     align-self: start;
-}
-
-.ristorante > img {
-    width: 25%;
-    margin-right: 20px;
 }
 
 .tile :first-child {
